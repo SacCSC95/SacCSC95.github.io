@@ -22,11 +22,16 @@
 			<fieldset>
 				<label for="Fancify">Fancify</label>
 
-				<button onclick="bigger()">Bigger!</button>
-				<input type="radio" id="FancyShmancy" onchange="toBold()" />
+				<button type="button" onclick="bigger()">Bigger!</button>
+
+				<button type="button" onclick="moo()">Moo</button>
+
+				<input type="radio" id="FancyShmancy" name="toggleBold" 
+					value="FancyShmancy" onchange="toFancy()" />
 				<label for="FancyShmancy">FancyShmancy</label>
 
-				<input type="radio" id="BoringBetty" />
+				<input type="radio" id="BoringBetty" name="toggleBold"
+					 value="BoringBetty" onchange="toNorm()" checked />
 				<label for="BoringBetty">BoringBetty</label>
 			</fieldset>
 		</form>
